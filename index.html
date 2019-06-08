@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire de saisie d'un patient</title>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+</head>
+<body>
+	<form action="#" method="post">
+
+		<fieldset>
+			<legend>Civilite: </legend>
+			<p>
+				<label for="lastname">*Nom:</label>
+				<input type="text" name="f_lastname" id="lastname">
+			</p>
+			<p>
+				<label for="firstname">*Prénom:</label>
+				<input type="text" name="f_firstname" id="firstname">
+			</p>
+			<p>
+				<label for="gender">*Sexe: </label>
+				<input type="radio" id="gender" name="f_gender" value="H">Homme
+				<input type="radio" id="gender" name="f_gender" value="F">Femme
+			</p>
+		</fieldset><br><br>
+
+		<fieldset>
+			<legend>LIEU DE RESIDENCE ET NAISSANCE</legend>
+			<p>
+				<label for="address">*Adresse: </label>
+				<input type="text" id="address" name="f_address"><label for="zipcode">*Code Postal: </label>
+				<input type="text" id="zipcode" name="f_zipcode"><label for="city">*Ville: </label>
+				<input type="text" id="city" name="f_city">
+			</p>
+
+			<p>
+				<label for="birthdate">*Date de naissance</label>
+				<input type="date" id="birhdate" name="f_birthdate">
+				<label for="birthlocation">*Lieu de naissance</label>
+				<input type="text" id="birthlocation" name="f_birthlocation">
+			</p>
+		</fieldset><br><br>
+
+		<fieldset>
+			<legend>DIVERS</legend>
+			<p>
+				<label for="infos">Informations complémentaires:</label><br>
+				<textarea name="f_infos" id="infos" cols="80" rows="10"></textarea>
+			</p>
+		</fieldset>
+		
+		<p>
+			<input type="submit" value="Enregistrer">
+			<input type="reset" value="Annuler">
+		</p>
+
+	</form>
+</body>
+</html>
